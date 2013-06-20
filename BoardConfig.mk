@@ -32,7 +32,7 @@ TARGET_OTA_ASSERT_DEVICE := jaspervzw
 TARGET_KERNEL_CONFIG        := cyanogen_jaspervzw_defconfig
 BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x01500000
 ## one day it'll have 3.4 kernel merged in to d2
-TARGET_KERNEL_SOURCE        := kernel/samsung/jaspervzw
+TARGET_KERNEL_SOURCE        := kernel/samsung/apexqtmo
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
