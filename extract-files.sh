@@ -2,6 +2,6 @@
 
 set -e
 
-export DEVICE=apexqtmo
+export DEVICE=jaspervzw
 export VENDOR=samsung
 ./../d2-common/extract-files.sh $@

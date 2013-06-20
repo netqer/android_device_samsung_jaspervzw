@@ -23,12 +23,19 @@
  
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from apexqtmo device
-$(call inherit-product, device/samsung/apexqtmo/device.mk)
+# Inherit from jaspervzw device
+$(call inherit-product, device/samsung/jaspervzw/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_apexqtmo
-PRODUCT_DEVICE := apexqtmo
+PRODUCT_NAME := full_jaspervzw
+PRODUCT_DEVICE := jaspervzw
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SGH-T699
+PRODUCT_MODEL := SCH-I200
+
+# loki
+PRODUCT_PACKAGES += \
+    loki_patch \
+    loki_flash \
+    loki.sh \
+    valid_bootloaders

@@ -21,18 +21,18 @@
 #
 
 # inherit from the proprietary version
--include vendor/samsung/apexqtmo/BoardConfigVendor.mk
+-include vendor/samsung/jaspervzw/BoardConfigVendor.mk
 # inherit from common d2
 -include device/samsung/d2-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := apexqtmo
+TARGET_OTA_ASSERT_DEVICE := jaspervzw
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogen_apexq_defconfig
+TARGET_KERNEL_CONFIG        := cyanogen_jaspervzw_defconfig
 BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x01500000
 ## one day it'll have 3.4 kernel merged in to d2
-TARGET_KERNEL_SOURCE        := kernel/samsung/apexqtmo
+TARGET_KERNEL_SOURCE        := kernel/samsung/jaspervzw
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
@@ -70,3 +70,6 @@ BOARD_HAVE_OLD_ION_API := true
 # Use regular media driver variant for 8960
 TARGET_QCOM_MEDIA_VARIANT :=
 endif
+
+# loki
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/jaspervzw/loki
