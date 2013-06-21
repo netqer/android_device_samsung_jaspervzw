@@ -72,4 +72,4 @@ TARGET_QCOM_MEDIA_VARIANT :=
 endif
 
 # loki
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/jaspervzw/loki
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/msm8960-common/loki
